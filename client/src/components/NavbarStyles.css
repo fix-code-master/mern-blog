@@ -1,0 +1,233 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 95%;
+  height: 80px;
+  border-radius: 13px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
+  background-color: #222;
+  filter: url('#old-goo');
+}
+
+.NavbarItems-new {
+  filter: url('#fancy-goo');
+}
+.liquid {
+  position: absolute;
+  height: -webkit-fill-available;
+  z-index: -1;
+}
+
+.navbar-logo {
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 0rem;
+}
+
+.nav-item {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover .list {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #01959a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+}
+
+.nab-links i {
+  padding-right: 10px;
+}
+
+.nav-item:hover .list,
+.nav-item:hover .nav-links {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+button {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem !important;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #01959a;
+}
+
+.menu-icons {
+  display: none;
+}
+
+.list {
+  padding: 11px;
+  background-color: #222;
+  position: absolute;
+  border-radius: 10px;
+  top: 3.5em;
+  color: #01959a;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.2s ease-in-out;
+}
+.extra-list {
+  padding: 0px 10px 0px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.extra-list:hover {
+  color: #01959a;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+    z-index: 99;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #222;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 13px;
+  }
+
+  .active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-links {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+
+  button {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #01959a;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .menu-icons {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-icons i {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  /* bujvhbkkjlnlknlkn */
+  .nav-item {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-item:hover {
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-item:nth-child(2):hover .list {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease-in-out;
+    height: 52.8px;
+  }
+  .nav-item:nth-child(3):hover .list {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease-in-out;
+    height: 52.8px;
+  }
+  .nav-item:hover .list,
+  .nav-item:hover .nav-links {
+    /* color: #fff; */
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-links {
+    text-decoration: none;
+    color: #01959a;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+  }
+  .nab-links i {
+    padding-right: 10px;
+  }
+  .list {
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    top: 0rem;
+    padding: 0;
+    position: relative;
+    height: 0px;
+  }
+}
