@@ -35,9 +35,7 @@ export const MenuItems = [
   },
   {
     title: 'Sign Up',
-    url: '/signup',
+    url: '/sign-up',
     cName: 'nav-links-mobile',
   },
 ]
-
-

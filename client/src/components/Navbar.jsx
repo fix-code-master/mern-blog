@@ -1,8 +1,8 @@
 import './NavbarStyles.css'
-import { MenuItems, Service, contactUs } from './MenuItems'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import { MenuItems } from './MenuItems'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
-import { useLocation } from 'react-router-dom'
 import { useState } from 'react'
 function Navbar() {
   const [clicked, setClicked] = useState(false)

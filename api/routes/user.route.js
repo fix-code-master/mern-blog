@@ -2,7 +2,7 @@ import express from 'express';
 import {
   deleteUser,
   getUser,
-  getUsers,
+  getUsers, 
   signout,
   test,
   updateUser,

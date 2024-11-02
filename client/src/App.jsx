@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Gallery from './routes/Galllery'
 import Presentation from './routes/Presentation'
 import Vacancy from './routes/Vacancy'
+import SignIn from './routes/SignIn'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/vacancy' element={<Vacancy />} />
         <Route path='/sign-up' element={<SignUp />} />
+        <Route path='/sign-in' element={<SignIn />} />
       </Routes>
       <Navbar />
     </div>
